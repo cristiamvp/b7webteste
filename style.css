@@ -1,0 +1,45 @@
+dir {
+  margin: 0;
+  padding: 0;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  margin: 0 40px;
+}
+.header {
+  height: 70px;
+  margin-bottom: 5px;
+  background-color: blue;
+}
+.footer {
+  margin-top: 5px;
+  height: 70px;
+  background-color: brown;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: aliceblue;
+}
+.container_content {
+  flex: 2;
+  height: 500px;
+  background-color: blue;
+
+  padding: 5px;
+}
+.sidebar {
+  flex: 1;
+  margin: 5px;
+
+  height: 500px;
+  background-color: blueviolet;
+
+  padding: 5px;
+}
+
+span {
+  margin-left: 5px;
+}
