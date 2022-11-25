@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <menu-superior></menu-superior>
+            <contador></contador>
+        </header>
+
+
+        <section class="container">
+            <section class="container_content" id="conteudo">
+                <contador></contador>
+                <postagem titulo="titulo bom  remoto">
+                    Corpo da postagem 1 <br>
+
+
+                </postagem>
+                <postagem titulo="titulo bom 2 modificando nova branch">
+                    Corpo da postagem 2 <br>
+
+                </postagem>
+                <div v-if="responderAberto">
+                    <span>Respondendo a: {{respostaTitulo}}</span><br>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+            </section>
+            <aside class="sidebar ">
+                <menu-superior></menu-superior>
+
+
+            </aside>
+        </section>
+
+        <footer class="footer">
+            <menu-superior></menu-superior>
+            <contador></contador>
+        </footer>
+
+    </div>
+    <script tyepe="text/javascript" src="script.js"></script>
+
+</body>
+
+
+</html>
