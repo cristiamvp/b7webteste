@@ -1,3 +1,6 @@
+Vue.component('aviso', {
+    template: '<div class="aviso"><slot></slot></div>'
+})
 Vue.component('contador', {
     data: function () {
         return {
