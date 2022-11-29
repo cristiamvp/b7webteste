@@ -11,43 +11,35 @@
 <body>
     <div id="app">
         <header class="header">
-            <menu-superior></menu-superior>
-            <contador></contador>
+
         </header>
 
 
         <section class="container">
             <section class="container_content" id="conteudo">
-                <contador></contador>
-                <aviso>
-                    Mensagem de aviso
-                </aviso>
 
-                <postagem titulo="titulo bom  remoto testando agora dia dois  subir">
-
+                <postagem titulo="Titulo 1 da postagem" v-on:responder="abrirResposta">
                     Corpo da postagem 1 <br>
-
-
                 </postagem>
-                <postagem titulo=" nova branch">
+
+                <postagem titulo=" nova branch" v-on:responder="abrirResposta">
                     Corpo da postagem 2 <br>
-
                 </postagem>
+
                 <div v-if="responderAberto">
                     <span>Respondendo a: {{respostaTitulo}}</span><br>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
             </section>
             <aside class="sidebar ">
-                <menu-superior></menu-superior>
+
 
 
             </aside>
         </section>
 
         <footer class="footer">
-            <menu-superior></menu-superior>
-            <contador></contador>
+
         </footer>
 
     </div>
